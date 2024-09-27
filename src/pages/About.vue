@@ -27,6 +27,7 @@ const newsList = reactive([
     { id: '002', title: '战狼', content: '美国队长' },
     { id: '003', title: '华为', content: '苹果' },
     { id: '004', title: '怪零', content: '顶针' },
+    { id: '005', title: '兔子', content: '哆啦a梦' },
 ])
 </script>
 

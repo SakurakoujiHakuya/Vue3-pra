@@ -14,7 +14,7 @@ const { sum, addSum } = useSum(1)
 </script>
 <style scoped>
 .home {
-    background-color: blue;
+    background-color: pink;
     width: 400px;
     height: 400px;
     text-align: center;
