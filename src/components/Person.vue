@@ -1,29 +1,18 @@
 <template>
-    <!-- html结构 -->
-    <div class="person">
-    </div>
+    <h1>hello123</h1>
+    <h2>{{ a }}</h2>
 </template>
 
-<script lang="ts">
-// js or ts  
-export default {
-    name: 'Person',
-    data() {
-        return {
-            name: '张三',
-            tel: '115',
-            age: 56
-        }
-    },
-    methods: { // 修改这里  
-        changeage() {
-            this.age += 1
-        },
-        showTel() {
-            alert(this.tel)
-        }
-    }
-}  
+<script lang="ts" setup>
+import { defineProps } from 'vue';
+
+// 正确用法，定义 props  
+const props = defineProps<{
+    a: string; // 假设 a 是字符串类型  
+}>();
+
+// 可选：将 a 变为局部变量，方便使用  
+const a = props.a;  
 </script>
 
 <style>
