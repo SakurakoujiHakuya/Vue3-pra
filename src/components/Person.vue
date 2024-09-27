@@ -8,7 +8,7 @@ import { defineProps } from 'vue';
 
 // 正确用法，定义 props  
 const props = defineProps<{
-    a: string; // 假设 a 是字符串类型  
+    a: string; // 假设 a 是字符串类型s  
 }>();
 
 // 可选：将 a 变为局部变量，方便使用  
