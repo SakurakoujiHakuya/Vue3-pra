@@ -4,8 +4,11 @@ export default function (a?: number) {
     let sum = ref(0)
     if (a)
         sum.value += a
-    function addSum() {
-        sum.value++
+    function addSum(b: number) {
+        sum.value += b
     }
-    return { sum, addSum }
+    function subSum(b: number) {
+        sum.value -= b
+    }
+    return { sum, addSum, subSum }
 }
